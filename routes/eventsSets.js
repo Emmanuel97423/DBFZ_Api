@@ -1,6 +1,10 @@
 let express = require('express');
 let router = express.Router();
 let fetch = require('node-fetch');
+let cors = require('cors');
+
+let app = express();
+app.use(cors());
 
 router.get("/", function  (req, res, next) {
     fetch("https://api.smash.gg/gql/alpha", {
