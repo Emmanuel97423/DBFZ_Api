@@ -15,25 +15,33 @@ router.get("/", function  (req, res, next) {
       },
       
       body: JSON.stringify({
-        query: `query TournamentQuery($slug: String, $page: Int!, $perPage: Int!) {
-          tournament(slug: $slug) {
-            events {
+        query: `query EventEntrants($eventId: ID!, $page: Int!, $perPage: Int!) {
+            event(id: $eventId) {
+              id
               name
-              standings(query: { page: $page, perPage: $perPage }) {
+              entrants(query: {
+                page: $page
+                perPage: $perPage
+              }) {
+                pageInfo {
+                  total
+                  totalPages
+                }
                 nodes {
-                  standing
-                  entrant {
-                    name
+                  id
+                  participants {
+                    id
+                    gamerTag
                   }
                 }
               }
             }
-          }
-        }`,
+          },
+          `,
           variables: {
-            "slug": "evo2018",
+            "eventId":538503,
             "page": 1,
-            "perPage": 3
+            "perPage": 20
           }
       })
     })

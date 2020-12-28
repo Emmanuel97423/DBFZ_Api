@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue apprentisage</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+ <div id="eventApp">
+  
+   <h1>Event List</h1>
+   <button v-on:click="updateEvent()">Mettre à jour</button>
+  <ul>
+      <li v-for = "event in eventList"> {{ event }}</li>
+  </ul>
+ </div>
+ <div id="entrantsApp">
+  
+    <h1>Entrants List</h1>
+    <button v-on:click="updateEntrants()">Mettre à jour</button>
+<ol>
+ <entrant-item
+    v-for="entrant in entrantsList"
+    v-bind:entrant ="entrant"
+    v-bind:key = "entrant"
+ ></entrant-item>
+</ol>
+  </div>
+    
+ <script src="/frontend/components/events.js"></script>
+ <script src="/frontend/components/entrants.js"></script>
+</body>
+</html>

@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "push": "git push https://github.com/Emmanuel97423/DBFZ_Api.git"
+    "push": "git push https://github.com/Emmanuel97423/DBFZ_Api.git",
+    "sass": "sass --watch frontend-nofw/sass/main.scss frontend/style/style.css"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
@@ -14,7 +16,9 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "node-fetch": "^2.6.1",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "vue": "^2.6.12",
+    "vue-axios": "^3.2.0"
   },
   "engines": {
     "node": "14.15.1"

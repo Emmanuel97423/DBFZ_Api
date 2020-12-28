@@ -7,14 +7,15 @@
 var app = require('../app');
 var debug = require('debug')('dbfz-api:server');
 var http = require('http');
-const cors = require('cors');
+
 
 /**
  * Get port from environment and store in Express.
  */
-app.use(cors());
-app.use((req, res, next) =>{
+
+app.get((req, res, next) =>{
   res.header ("Access-Control-Allow-Origin", "*");
+  res.header ("Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS")
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 })
