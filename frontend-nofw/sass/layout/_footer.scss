@@ -1,0 +1,56 @@
+footer {
+    display:grid;
+    grid-template-columns: 10px 4.9% auto auto auto 20% 10px;
+    grid-template-rows: 100px 90px 10px ;
+    justify-items: center;
+        .footer__logo--shibunen {
+            grid-column-start: 2;
+            grid-column-end:3; 
+            grid-row-start:2;
+            grid-row-end: 3;
+            align-self: center;
+            justify-self: start;
+            img {
+                width:55px;
+                
+                }  
+        }
+        .footer__logo--bandai {
+            grid-column-start:3;
+            grid-column-end:5;  
+            grid-row-start:2;
+            grid-row-end: 3;
+            align-self: center;
+            justify-self: start;
+        img {
+            width:380px;
+        
+        }
+        }
+        .bottom__menu {
+            grid-column-start:6;
+            grid-column-end:7; 
+            grid-row-start:2;
+            grid-row-end: 3; 
+            align-self: center;
+            justify-self: end;
+            color:white;
+            display: grid;
+            
+            ol {
+                width: 100%;
+                display:flex;
+                
+                
+                li, a {
+                    color:white;
+                    margin-left: 10px;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    list-style: none;
+                    text-decoration: none;
+                }
+            }
+        
+        }
+}

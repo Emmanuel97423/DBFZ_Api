@@ -1,0 +1,28 @@
+
+.blurred-button-container {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+
+}
+button {
+    background: inherit;
+    grid-column-start: 2;
+    grid-column-end:3;
+    justify-self: center;
+    padding:15px 80px 15px 80px;
+    background: inherit;
+    border: 1px solid white;
+    border-radius:30px;
+    color: white;
+    font-size:20px;
+    cursor: pointer;
+   
+}
+.button__reglement {
+    display:flex;
+    justify-content: center;
+    
+    justify-self:end;
+}
+
+

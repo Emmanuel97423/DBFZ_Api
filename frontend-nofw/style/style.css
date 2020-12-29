@@ -1,0 +1,509 @@
+html {
+  font-family: tahoma, sans-serif;
+}
+
+.blurred-button-container {
+  display: grid;
+  grid-template-columns: 30% auto 30%;
+}
+
+button {
+  background: inherit;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: center;
+  padding: 15px 80px 15px 80px;
+  background: inherit;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button__reglement {
+  display: flex;
+  justify-content: center;
+  justify-self: end;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#bar--white {
+  background-color: #05082e;
+  width: 100%;
+  height: 15px;
+}
+
+.cristal-balls {
+  margin: -83px 0 -69px 0;
+  display: grid;
+  grid-template-columns: 17% 17% 17% 17% 17% 17%;
+  justify-items: center;
+}
+.cristal-balls img {
+  width: 150px;
+}
+.cristal-balls__re {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.cristal-balls__mad {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.cristal-balls__mau {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.cristal-balls__sa {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.bottom {
+  width: 100%;
+  background-image: linear-gradient(rgba(18, 4, 153, 0.5), rgba(255, 230, 4, 0.5)), url("../img/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red;
+}
+
+article {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto 25% 25% 25% auto;
+  grid-template-rows: 150px 400px;
+}
+
+.box__tournament-RE {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/dbfz_wallpaper_dbfz-sangoku.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 65% bottom 75px;
+  background-color: #18255A;
+  width: 100%;
+  display: grid;
+  height: 310px;
+  grid-template-columns: 10px 30% auto 30% 10px;
+  grid-template-rows: 10px 35% auto 10px;
+  border-radius: 20px;
+}
+.box__tournament-RE img {
+  width: 70px;
+}
+.box__tournament-RE > .logo {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  display: grid;
+}
+.box__tournament-RE > .logo img {
+  width: 100px;
+  justify-self: center;
+}
+.box__tournament-RE > .flag {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: start;
+  justify-self: end;
+}
+.box__tournament-RE > .infos {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: #18255A;
+  margin: 0 -10px -10px -10px;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+}
+.box__tournament-RE--game {
+  padding: 0 0 5px 0;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+}
+.box__tournament-RE--location {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.box__tournament-RE--date {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+}
+.box__tournament-RE--date i {
+  margin: 0 5px 0 0;
+}
+.box__tournament-RE--rules {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.box__tournament-RE--rules i {
+  margin: 0 10px 0 0;
+}
+.box__tournament-RE--rules .fa-gamepad {
+  margin: 0 10px 0 15px;
+}
+.box__tournament-RE--state {
+  font-size: 12px;
+  color: white;
+  border: 2px solid lime;
+  width: 100px;
+  margin: 10px 0px 20px 0;
+  padding: 5px 0 5px 5px;
+  border-radius: 20px;
+}
+.box__tournament-RE--state i {
+  color: lime;
+}
+
+.box__tournament-MAD {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/dbfz_wallpaper_dbfz-sangoku.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 65% bottom 75px;
+  background-color: #18255A;
+  width: 100%;
+  display: grid;
+  height: 310px;
+  grid-template-columns: 10px 30% auto 30% 10px;
+  grid-template-rows: 10px 35% auto 10px;
+  border-radius: 20px;
+}
+.box__tournament-MAD img {
+  width: 70px;
+}
+.box__tournament-MAD > .logo {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  display: grid;
+}
+.box__tournament-MAD > .logo img {
+  width: 100px;
+  justify-self: center;
+}
+.box__tournament-MAD > .flag {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: start;
+  justify-self: end;
+}
+.box__tournament-MAD > .infos {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: #18255A;
+  margin: 0 -10px -10px -10px;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+}
+.box__tournament-MAD--game {
+  padding: 0 0 5px 0;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+}
+.box__tournament-MAD--location {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.box__tournament-MAD--date {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+}
+.box__tournament-MAD--date i {
+  margin: 0 5px 0 0;
+}
+.box__tournament-MAD--rules {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.box__tournament-MAD--rules i {
+  margin: 0 10px 0 0;
+}
+.box__tournament-MAD--rules .fa-gamepad {
+  margin: 0 10px 0 15px;
+}
+.box__tournament-MAD--state {
+  font-size: 12px;
+  color: white;
+  border: 2px solid #ff660e;
+  width: 120px;
+  margin: 10px 0px 20px 0;
+  padding: 5px 0 5px 5px;
+  border-radius: 20px;
+}
+.box__tournament-MAD--state i {
+  padding: 0 10px 0 0;
+  color: #ff660e;
+}
+
+.box__tournament-SA {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/dbfz_wallpaper_dbfz-sangoku.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 65% bottom 75px;
+  background-color: #18255A;
+  width: 100%;
+  display: grid;
+  height: 310px;
+  grid-template-columns: 10px 30% auto 30% 10px;
+  grid-template-rows: 10px 35% auto 10px;
+  border-radius: 20px;
+}
+.box__tournament-SA img {
+  width: 70px;
+}
+.box__tournament-SA > .logo {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  display: grid;
+}
+.box__tournament-SA > .logo img {
+  width: 100px;
+  justify-self: center;
+}
+.box__tournament-SA > .flag {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: start;
+  justify-self: end;
+}
+.box__tournament-SA > .infos {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: #18255A;
+  margin: 0 -10px -10px -10px;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+}
+.box__tournament-SA--game {
+  padding: 0 0 5px 0;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+}
+.box__tournament-SA--location {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.box__tournament-SA--date {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+}
+.box__tournament-SA--date i {
+  margin: 0 5px 0 0;
+}
+.box__tournament-SA--rules {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.box__tournament-SA--rules i {
+  margin: 0 10px 0 0;
+}
+.box__tournament-SA--rules .fa-gamepad {
+  margin: 0 10px 0 15px;
+}
+.box__tournament-SA--state {
+  font-size: 12px;
+  color: white;
+  border: 2px solid #ff660e;
+  width: 120px;
+  margin: 10px 0px 20px 0;
+  padding: 5px 0 5px 5px;
+  border-radius: 20px;
+}
+.box__tournament-SA--state i {
+  padding: 0 10px 0 0;
+  color: #ff660e;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+nav > ol {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+nav > ol > li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-items: center;
+  padding: 15px 15px 15px 15px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 10px 4.9% auto auto auto 20% 10px;
+  grid-template-rows: 100px 90px 10px;
+  justify-items: center;
+}
+footer .footer__logo--shibunen {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  justify-self: start;
+}
+footer .footer__logo--shibunen img {
+  width: 55px;
+}
+footer .footer__logo--bandai {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  justify-self: start;
+}
+footer .footer__logo--bandai img {
+  width: 380px;
+}
+footer .bottom__menu {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  justify-self: end;
+  color: white;
+  display: grid;
+}
+footer .bottom__menu ol {
+  width: 100%;
+  display: flex;
+}
+footer .bottom__menu ol li, footer .bottom__menu ol a {
+  color: white;
+  margin-left: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  background-color: white;
+  height: 50px;
+  box-shadow: 0px 0.5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  width: 150px;
+}
+
+.slide {
+  background: rgba(22, 8, 105, 0.933);
+  background-image: linear-gradient(rgba(255, 230, 4, 0.5), rgba(18, 4, 153, 0.5)), url("../img/background-slide.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 50px;
+  grid-template-rows: 50px auto auto 50px;
+  justify-items: center;
+  padding-bottom: 7em;
+}
+.slide__img {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.slide__img > img {
+  width: 400px;
+  margin: -60px 0 -10px 0;
+}
+.slide__title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-self: center;
+  justify-self: center;
+  margin-top: -100px;
+}
+.slide__video {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: center;
+}
+.slide__video iframe {
+  box-shadow: 4px 4px 14px 4px;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  margin: 50px 0 65px 0;
+}
+
+#indian-ocean {
+  font-size: 80px;
+  color: yellow;
+}
+
+#championship {
+  font-size: 75px;
+  color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

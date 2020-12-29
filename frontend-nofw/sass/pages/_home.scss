@@ -1,0 +1,57 @@
+#bar--white {
+    
+    background-color:rgb(5, 8, 46);
+    width: 100%;
+    height: 15px;
+}
+.cristal-balls {
+    @include cristal-balls
+}
+.bottom {
+    width:100%;
+    background-image: linear-gradient(rgba(18, 4, 153, 0.5),rgba(255, 230, 4, 0.5), ), url('../img/maxresdefault.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+
+}
+article {
+    
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto 25% 25% 25% auto;
+    grid-template-rows: 150px 400px;
+}
+.box__tournament-RE {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @include boxTournament;
+    &--state {
+      @include statement-live
+    }
+    
+}
+.box__tournament-MAD {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @include boxTournament;
+    &--state {
+        @include statement-loading
+    }
+}
+.box__tournament-SA {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @include boxTournament;
+    &--state {
+        @include statement-loading
+    }
+}
+

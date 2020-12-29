@@ -1,0 +1,140 @@
+@mixin cristal-balls {
+    margin: -83px 0 -69px 0;
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17% 17% 17%;
+    justify-items: center;
+     img {
+        width: 150px;
+        
+    }
+    &__re {
+        
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    &__mad {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        
+    }
+    &__mau {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        
+    }
+    &__sa {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        
+    }
+}
+@mixin statement-live {
+    font-size: 12px;
+    color:white;
+    border: 2px solid $color-live;
+    width:100px;
+    margin: 10px 0px 20px 0;
+    padding: 5px 0 5px 5px;
+    border-radius: 20px;
+     i {
+        color:$color-live;
+    }
+}
+@mixin statement-loading {
+    font-size: 12px;
+    color:white;
+    border: 2px solid $color-loading;
+    width:120px;
+    margin: 10px 0px 20px 0;
+    padding: 5px 0 5px 5px;
+    border-radius: 20px;
+     i {
+         padding:0 10px 0 0;
+        color:$color-loading;
+    }
+}
+
+@mixin boxTournament {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/dbfz_wallpaper_dbfz-sangoku.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right 65% bottom 75px;
+    background-color: $color-bottom-box;
+    width:100%;
+    display: grid;
+    height: 310px;
+    grid-template-columns: 10px 30% auto 30% 10px;
+    grid-template-rows:10px 35% auto 10px;
+    border-radius: 20px;
+
+        img {
+        width: 70px
+    }
+    & > .logo {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-self: center;
+        display:grid;
+            img {
+                width: 100px;
+                justify-self: center;
+            }
+        
+    }
+    & > .flag {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-self: start;
+        justify-self: end;
+    }
+    & > .infos {
+        grid-column-start: 2;
+        grid-column-end:5;
+        grid-row-start: 3;
+        grid-row-end:4;
+        background-color: $color-bottom-box;
+        margin: 0 -10px -10px -10px;
+        padding:10px;
+        border-radius: 0 0 20px 20px;
+            
+       
+    } 
+    &--game {
+        padding: 0 0 5px 0;
+        text-transform:uppercase;
+        font-weight: lighter;
+        color:white;
+    }   
+    &--location {
+        color:white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+   
+    &--date {
+        color:white;
+        font-size:  15px;
+        font-weight: bold;
+       
+        padding: 0 0 10px 0;
+            i{
+                margin: 0 5px 0 0;
+            }
+
+    }
+    &--rules {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        i {
+            margin: 0 10px 0 0;
+        }
+        .fa-gamepad {
+            margin: 0 10px 0 15px;
+        }
+    }
+}
